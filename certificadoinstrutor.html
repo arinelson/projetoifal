@@ -1,145 +1,211 @@
-<!DOCTYPE html>
 <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Cadastro de Instrutor</title>
-            
-                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-                <!-- Bootstrap CSS -->
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        </head>
-        <body>
+    <head>
+        <title>Cadastro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+   .container
+    {
+      border: 1px solid black;
+      margin-top: 25px;
+      margin-bottom: 80px;
+      margin-right: 150px;
+      margin-left: 80px;
+      background-color:grey;
+          
+     
+    }
+    h2
+    {
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 270px;
+        border: 5px;
+        border: 1px solid;
+        background-color: gray;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 50%;
 
-                <main id="principal">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                                    <a class="navbar-brand" href="#">ATA Audiovisual</a>
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                      <span class="navbar-toggler-icon"></span>
-                                    </button>
-                                  
-                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                      <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item active">
-                                          <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
-                                        </li>
-                                        <li class="nav-item">
-                                          <a class="nav-link" href="#">Novidades</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                           Cursos & Eventos
-                                          </a>
-                                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            
-                                            <a class="dropdown-item" href="cursos.html">Cursos</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="eventos.html">Eventos</a>
-                                          </div>
-                                        </li>
+       
+    }
+    p 
+    {
+        
+        text-align: left;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    </style>
+    </head>
+    <body>
+            <main id="principal">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                <a class="navbar-brand" href="#">ATA Audiovisual</a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                  <span class="navbar-toggler-icon"></span>
+                                </button>
+                              
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                      <a class="nav-link" href="index.html">Home<span class="sr-only"></span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link" href="#">Novidades</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       Cursos & Eventos
+                                      </a>
+                                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                         
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                             Membros
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                              
-                                              <a class="dropdown-item" href="cadastrodosalunos.html">Alunos</a>
-                                              <div class="dropdown-divider"></div>
-                                              <a class="dropdown-item" href="certificadoinstrutor.html">Instrutores</a>
+                                        <a class="dropdown-item" href="cursos.html">Cursos</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="eventos.html">Eventos</a>
+                                      </div>
+                                    </li>
+                                    
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         Membros
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          
+                                          <a class="dropdown-item" href="cadastrodosalunos.html">Alunos</a>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="certificadoinstrutor.html">Instrutores</a>
+                                          <a class="dropdown-item" href="paginadelogin.html">Já tem cadastro? Entre!</a>
+                                          <a class="dropdown-item" href="membross.html">Conecte-se com os membros</a>
+                                        </div>
+                                      </li>
+                                  </ul>
+                                  <form class="form-inline my-2 my-lg-0">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                                  </form>
+                                </div>
+                              </nav>
+                              <h2>Cadastre-se e seja um instrutor certificado!</h2>
+                              <div class="container">
+                                    <p><strong>Informações Pessoais </strong></p>
+                                    <form class="form-horizontal" action="/action_page.php">
+                                      <div class="form-group">
+                                        <label class="control-label col-sm-2" for="nome">Nome Completo:</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" id="nome" placeholder="Digite seu nome completo" name="nome">
+                                        </div>
+                                      </div>
+                                      <form class="form-horizontal" action="/action_page.php">
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-2" for="endereço">Endereço:</label>
+                                          <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="endereço" placeholder="Digite seu endereço" name="endereço">
+                                          </div>
+                                        </div>
+    
+                                        <form class="form-horizontal" action="/action_page.php">
+                                            <div class="form-group">
+                                              <label class="control-label col-sm-2" for="email">Telefone</label>
+                                              <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="email" placeholder="Telefone" name="email">
+                                              </div>
                                             </div>
-                                          </li>
-                    
-                                      </ul>
-                                      <form class="form-inline my-2 my-lg-0">
-                                        <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
-                                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-                                      </form>
-                                    </div>
-                                  </nav>
-            <form action="cursos-e-eventos.php" method="GET">
-                <fieldset>
-                    <legend>
-                        Preencha os campos abaixo.
-                    </legend>
-                    <label>
-                        Nome Completo:
-                        <input type="text" name="name" size="30" maxlength="100">
-                    </label>
-                    <br/>
-                    <label>
-                            Email:
-                            <input type="email" name="email" size="30" maxlength="100">
-                            </label>
-                    <br/>
-                    <label>
-                            Telefone
-                            <input type="telefone" name="telefone" size="30" maxlength="100">
-                            </label>
-                            <br/>
-                    <label>
-                        Data de Nascimento
-                            <input type="date" name="date" size="30" maxlength="100">
-                            </label>
-                            <br/>
-                            <label>
-                                   Selecione seu sexo
-                                        <input type="radio" name="rating" value="home"/>
-                                       Masculino
-                                        </label>
-                     <label>
-                         <input type="radio" name="rating" value="feminina"/>
-                         Feminino
-                     </label>
-                </fieldset>
-                <br/>
-                <fieldset>
-                    <legend>
-                        Formação Profissional
-                    </legend>
-                    <p>
-                        <label>
-                            Escolaridade
-                            <input type="radio" name="rating" value="fundamental"/> 
-                             Ensino Fundamental
-                        </label>
-                        <label>
-                            <input type="radio" name="rating" value="medio"/>
-                            Ensino Médio
-                        </label>
-                        <label>
-                                <input type="radio" name="rating" value="superior"/>
-                               Ensino Superior
-                            </label>
-                        <br>
-                        <label for="cursos">
-                            Selecione o curso que deseja ministrar:
-                        </label>
-                        <select name="referencia" id="cursos">
-                            <option value="producaodevideo">Produção de video</option>
-                            <option value="filmagem">Filmagem</option>
-                            <option value="edicaodevideo">Edição de Vídeo</option>
-                        </select>
-                    </p>
-                    <p>
-                            <label for="comentarios">
-                                Faça mini-currículo descrevendo a sua formação: 
-                            </label>
-                            <br/>
-                            <textarea rows="5" cols="50" id="comentarios"></textarea>
-                        </p>
-                   <label>
-                       <input type="checkbox" name="assine" checked = "checked"/>
-                       Quero receber novidades sobre AT audiovisual consultoria
-                   </label>
-                   <br/>
-                   <input type="submit" value="Enviar"/>
-                </fieldset>
-            </form>
+                                      <form class="form-horizontal" action="/action_page.php">
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-2" for="email">Email:</label>
+                                          <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            Selecione o seu sexo:
+                                            <br>
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="form-check-label" for="inlineRadio1">Feminino</label>
+                                              </div>
+                                              <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="form-check-label" for="inlineRadio2">Masculino</label>
+                                              </div>
+                                        <div class="form-group">
+                                            <br>
+                                            <p><strong>Formação Profissional</strong></p>                                      
+                                            Escolaridade:
+                                            <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">Ensino Fundamental</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                                        <label class="form-check-label" for="inlineCheckbox1">Ensino Médio</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                                            <label class="form-check-label" for="inlineCheckbox1">Ensino Superior</label>
+                                                          </div>
+                                                          <br>
+                                                <label for="sel1">Selecione o curso que deseja ministrar:</label>
+                                                <br>
+                                                <select class="form-control" id="sel1">
+                                                  <option>Produção Audiovisual</option>
+                                                  <option>Filmagem</option>
+                                                  <option>Edição de vídeo</option>
+                                                  <option>Edição de áudio</option>
+                                                  <option>Adobe Photoshop</option>
+                                                  <option>Adobe Premiere</option>
+                                                </select>
+                                              </div>
+                                      <div class="form-group">
+                                            <label for="exampleFormControlTextarea1">Faça mini-currículo descrevendo a sua formação:</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                          </div>
+                                          <div class="form-group">
+                                                <label for="exampleFormControlFile1">Envie seu currículo</label>
+                                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                              </div>
+                                              <form class="form-horizontal" action="/action_page.php">
+                                                <p><strong>Acesso ao login</strong></p>
+                                                    
+                                                <div class="form-group">
+                                                  <label class="control-label col-sm-2" for="email">Nome de login</label>
+                                                  <div class="col-sm-10">
+                                                    <input type="email" class="form-control" id="email" placeholder="Digite seu nome de login" name="email">
+                                                  </div>
+                                                </div>
+                                          <div class="form-group">
+                                            <label class="control-label col-sm-2" for="pwd">Senha</label>
+                                            <div class="col-sm-10">          
+                                              <input type="password" class="form-control" id="pwd" placeholder="Digite sua senha" name="pwd">
+                                            </div>
+                                          </div>
+                                          <div class="form-group">
+                                                <label class="control-label col-sm-2" for="pwd">Confirme sua Senha</label>
+                                                <div class="col-sm-10">          
+                                                  <input type="password" class="form-control" id="pwd" placeholder="Confirme sua senha" name="pwd">
+                                                </div>
+                                              </div>
 
 
+                                      <div class="form-group"> 
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                              <div class="checkbox">
+                                                <label><input type="checkbox"> Lembre-se</label>
+                                              </div>
+                                            </div>
+                                            <div class="form-group"> 
+                                                    <div class="col-sm-offset-2 col-sm-10">
+                                                      <button type="submit" class="btn btn-default">Entrar</button>
+                                                    </div>
+                                          </div>
+                                    </form>
+                                  </div>
 
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        </body>
-    </html>
+    </body>
+</html>
+
+       
+    
