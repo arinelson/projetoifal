@@ -1,18 +1,27 @@
 <html>
     <head>
         <title>Cadastro</title>
-
-        <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-
+    <style>
+   .container
+    {
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color:grey;    
+    }
+    h2
+    {
+        text-align: center;
+        margin-top: 5px;
+    }
+    </style>
     </head>
     <body>
-
             <main id="principal">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                                 <a class="navbar-brand" href="#">ATA Audiovisual</a>
@@ -49,6 +58,8 @@
                                           <a class="dropdown-item" href="cadastrodosalunos.html">Alunos</a>
                                           <div class="dropdown-divider"></div>
                                           <a class="dropdown-item" href="certificadoinstrutor.html">Instrutores</a>
+                                          <a class="dropdown-item" href="paginadelogin.html">Já tem cadastro? Entre!</a>
+                                          <a class="dropdown-item" href="membross.html">Conecte-se com os membros</a>
                                         </div>
                                       </li>
                 
@@ -59,80 +70,85 @@
                                   </form>
                                 </div>
                               </nav>
+                              <h2>Cadastre-se</h2>
+                              <div class="container">
+                                <br>
+                                <p><strong>Informações Pessoais </strong></p>
+                                    <form class="form-horizontal" action="/action_page.php">
+                                      <div class="form-group">
+                                        <label class="control-label col-sm-2" for="email">Nome Completo</label>
+                                        <div class="col-sm-10">
+                                          <input type="email" class="form-control" id="email" placeholder="Digite seu nome completo" name="email">
+                                        </div>
+                                      </div>
+                                      <form class="form-horizontal" action="/action_page.php">
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-2" for="email">Endereço</label>
+                                          <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email" placeholder="Digite seu endereço" name="email">
+                                          </div>
+                                        </div>
+                                        <form class="form-horizontal" action="/action_page.php">
+                                            <div class="form-group">
+                                              <label class="control-label col-sm-2" for="email">Telefone</label>
+                                              <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="email" placeholder="Telefone" name="email">
+                                              </div>
+                                            </div>
+                                      <form class="form-horizontal" action="/action_page.php">
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-2" for="email">Email:</label>
+                                          <div class="col-sm-10">
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <br>
+                                            <p><strong>Formação Profissional</strong></p>
+                                                <label for="sel1">Selecione o curso que deseja estudar:</label>
+                                                <select class="form-control" id="sel1">
+                                                  <option>Produção Audiovisual</option>
+                                                  <option>Filmagem</option>
+                                                  <option>Edição de vídeo</option>
+                                                  <option>Edição de áudio</option>
+                                                  <option>Adobe Photoshop</option>
+                                                  <option>Adobe Premiere</option>
+                                                </select>
+                                              </div>
+                                        <form class="form-horizontal" action="/action_page.php">
+                                          <p><strong> Acesso ao login </strong></p>
+                                            <div class="form-group">
+                                              <label class="control-label col-sm-2" for="email">Nome de login</label>
+                                              <div class="col-sm-10">
+                                                <input type="email" class="form-control" id="email" placeholder="Digite seu nome de login" name="email">
+                                              </div>
+                                            </div>
+                                      <div class="form-group">
+                                        <label class="control-label col-sm-2" for="pwd">Senha</label>
+                                        <div class="col-sm-10">          
+                                          <input type="password" class="form-control" id="pwd" placeholder="Digite sua senha" name="pwd">
+                                        </div>
+                                      </div>
+                                      <div class="form-group"> 
+                                            <div class="col-sm-offset-2 col-sm-10">
+                                              <div class="checkbox">
+                                                <label><input type="checkbox"> Lembre-se</label>
+                                              </div>
+                                            </div>
+                                            <div class="form-group"> 
+                                                    <div class="col-sm-offset-2 col-sm-10">
+                                                      <button type="submit" class="btn btn-default">Entrar</button>
+                                                    </div>
+                                          </div>
+                                    </form>
+                                  </div>
 
-        <header>
-            <h1>Cadastre-se</h1>
-        </header>
-        <form action="cursos-e-eventos.php" method="GET">
-            <fieldset>
-                <legend>
-                    Sobre você...
-                </legend>
-                <label>
-                    Nome:
-                    <input type="text" name="name" size="30" maxlength="100">
-                </label>
-                <br/>
-                <label>
-                        Email:
-                        <input type="email" name="email" size="30" maxlength="100">
-                        </label>
-                <br/>
-                <label>
-                        Telefone
-                        <input type="telefone" name="telefone" size="30" maxlength="100">
-                        </label>
-                        <br/>
-                <label>
-                    data de nascimento
-                        <input type="date" name="date" size="30" maxlength="100">
-                        </label>
-                        <br/>
-                        <label>
-                               Selecione seu sexo
-                                    <input type="radio" name="rating" value="home"/>
-                                   Masculino
-                                    </label>
-                 <label>
-                     <input type="radio" name="rating" value="feminina"/>
-                     Feminino
-                 </label>
-            </fieldset>
-            <br/>
-            <fieldset>
-                <legend>
-                    Curso:
-                </legend>
-                <p>
-                    <label for="cursos">
-                        Selecione o curso que deseja fazer:
-                    </label>
-                    <select name="referencia" id="cursos">
-                        <option value="producaodevideo">Produção de video</option>
-                        <option value="filmagem">Filmagem</option>
-                        <option value="edicaodevideo">Edição de Vídeo</option>
-                    </select>
-                </p>
-               <p>
-                   <label for="comentarios">
-                       Deixe aqui sua dúvida sobre nossos cursos
-                   </label>
-                   <br/>
-                   <textarea rows="4" cols="40" id="comentarios"></textarea>
-               </p>
-               <label>
-                   <input type="checkbox" name="assine" checked = "checked"/>
-                   Quero receber novidades sobre AT audiovisual consultoria
-               </label>
-               <br/>
-               <input type="submit" value="Enviar"/>
-            </fieldset>
-        </form>
-
-
-
+      
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
+
+       
+    
