@@ -1,39 +1,23 @@
 <html>
     <head>
-			<title>Eventos</title>
-			<style type="text/css">
-				body {
-					font-family: Arial, Verdana, sans-serif;
-					color: #111111;}
-				th {
-					border-bottom: 1px solid #0088dd; 
-					text-align: left; 
-					color: #0088dd;
-					font-weight: normal;}
-				td {
-					min-width: 150px;
-					min-height: 200px;
-					vertical-align: top;
-					line-height: 1.4em;}
-				td.description {
-					min-width: 450px;
-					max-width: 650px;
-					text-align: left;
-					padding: 5px;
-					margin: 0px;}
-				</style>
-
-        <!-- Meta tags Obrigatórias -->
+        <title>Eventos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-
+    <style>
+        body{
+				margin 0;
+				padding 0;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+			}
+            .card
+            {
+                margin-top: 20px;
+            }
+            
+    </style>
     </head>
     <body>
-
             <main id="principal">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                                 <a class="navbar-brand" href="#">ATA Audiovisual</a>
@@ -70,38 +54,63 @@
                                           <a class="dropdown-item" href="cadastrodosalunos.html">Alunos</a>
                                           <div class="dropdown-divider"></div>
                                           <a class="dropdown-item" href="certificadoinstrutor.html">Instrutores</a>
+                                          <a class="dropdown-item" href="paginadelogin.html">Já tem cadastro? Entre!</a>
+                                          <a class="dropdown-item" href="membross.html">Conecte-se com os membros</a>
                                         </div>
                                       </li>
-                
                                   </ul>
                                   <form class="form-inline my-2 my-lg-0">
                                     <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
                                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
                                   </form>
                                 </div>
-							</nav>
-	
-        <header>
-            <h1>Eventos</h1>
-        </header>
-		<table>
-			<tr>
-				<th></th>
-                <th>Eventos</th>
-                <th>Data</th>
-                <th>Local:</th>
-    
-			</tr>
-			<tr>
-				<td><img src="https://maisminas.org/wp-content/uploads/2019/07/unnamed-2-1170x610.jpg" width="200" height="150" alt="Fender Rhodes" /></td>
-                <td class="descricao"> Mostra de filmes </td> 
-                <td>22 de julho </td> 
-                <td>Ouro Preto, Minas Gerais</td>  
-			</tr>
-        </table>
-       
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                              </nav>
+                              <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row no-gutters">
+                                      <div class="col-md-4">
+                                        <img src="https://www.temporadalivre.com/uploads/editor/pictures/bafa26c44d96/content_58382829_2517641188249072_5577696237143982080_n.jpg" class="card-img" alt="Festival">
+                                      </div>
+                                      <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title">De 16 a 24 de Agosto de 2019</h5>
+                                          <p class="card-text"> 47 º Festival de Cinema de Gramado </p>
+                                          <p class="card-text"><small class="text-muted">Gramado - RS</small></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card mb-3" style="max-width: 540px;">
+                                        <div class="row no-gutters">
+                                          <div class="col-md-4">
+                                            <img src="https://i1.wp.com/mulhernocinema.com/wp-content/uploads/2018/05/mulheresaudiovisual.jpg?resize=1024%2C509&ssl=1" class="card-img" alt="Workshop">
+                                          </div>
+                                          <div class="col-md-8">
+                                            <div class="card-body">
+                                              <h5 class="card-title">01 de Setembro de 2019</h5>
+                                              <p class="card-text">Palestra : Mulheres no audiovisual</p>
+                                              <p class="card-text"><small class="text-muted"><strong>Local:</strong> Centro de convenções, Maceió - AL</small></p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="card mb-3" style="max-width: 540px;">
+                                            <div class="row no-gutters">
+                                              <div class="col-md-4">
+                                                <img src="http://comunicacaouniuv.com.br/wp-content/uploads/2016/11/adesivo-luz-camera-acao-2.jpg" class="card-img" alt="...">
+                                              </div>
+                                              <div class="col-md-8">
+                                                <div class="card-body">
+                                                  <h5 class="card-title">29 de Outubro de 2019</h5>
+                                                  <p class="card-text">Workshop: luz, câmera e ação</p>
+                                                  <p class="card-text"><small class="text-muted"><strong>Local:</strong>Centro Cultural, São Paulo - SP</small></p>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                            
+
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	</body>
-</html>
+    </body>
+    </html>
